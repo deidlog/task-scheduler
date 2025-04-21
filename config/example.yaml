@@ -1,0 +1,12 @@
+jobs:
+  - name: System uptime
+    command: uptime
+    interval: 10  # seconds
+
+  - name: Memory and Swap Usage
+    command: free -h
+    interval: 30  # seconds
+
+  - name: Active Network Connections
+    command: ss -tunap
+    interval: 60  # seconds
