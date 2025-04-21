@@ -11,23 +11,25 @@ A lightweight, beginner-friendly job scheduler built in Python — ideal for aut
 
 ## Structure
 ```
-├── config/            # Task configuration files (YAML)
-│   └── example.yaml
+├── config/                     # Task configuration files (YAML)
+│   └── config.yaml
 │
-├── logs/              # Task execution logs
-│   └── .gitkeep       # Keeps the folder tracked by Git (even when empty)
+├── logs/                       # Task execution logs
+│   └── .gitkeep                # Keeps the folder tracked by Git (even when empty)
 │
-├── src/               # Main source code
+├── src/                        # Main source code
 │   ├── __init__.py
-│   └── scheduler.py
+│   ├── config_loader.py        # Loads and parses the YAML configuration files
+│   └── scheduler.py            # Contains logic for scheduling and executing tasks
 │
-├── tests/             # Unit tests
-│   └── test_scheduler.py
+├── tests/                      # Unit tests
+│   ├── test_config_loader.py   # Unit tests for config_loader.py
+│   └── test_scheduler.py       # Unit tests for scheduler.py
 │
-├── .gitignore         # Git ignore rules
-├── README.md          # Project description
-├── requirements.txt   # Dependencies
-└── main.py            # Entry point
+├── .gitignore                  # Git ignore rules
+├── README.md                   # Project description
+├── requirements.txt            # Dependencies
+└── main.py                     # Entry point
 ```
 
 ## Tech Stack
