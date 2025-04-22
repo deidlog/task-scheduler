@@ -6,7 +6,7 @@ A lightweight, beginner-friendly job scheduler built in Python — ideal for aut
 
 - YAML-based job configuration
 - Supports interval scheduling (e.g., every X seconds/minutes)
-- Logging of task executions
+- Task execution logging
 - Easy to extend and customize
 
 ## Structure
