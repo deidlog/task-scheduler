@@ -1,12 +1,16 @@
 jobs:
   - name: System uptime
     command: uptime
-    interval: 10  # seconds
+    interval:
+      seconds: 15
 
   - name: Memory and Swap Usage
     command: free -h
-    interval: 30  # seconds
+    interval:
+      minutes: 1
+      seconds: 30
 
   - name: Active Network Connections
     command: ss -tunap
-    interval: 60  # seconds
+    interval:
+      hours: 24
